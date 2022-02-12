@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AIDE</string>
+
+    <string name="preference_title_sdk">android.jar file</string>
+    <string name="preference_summary_sdk">Specify the android.jar file to compile against.</string>
+    <string name="preference_dialog_sdk">Full path of android.jar file:</string>
+    <string name="proguard_title">Proguard</string>
+    <string name="proguard_summary">Enable proguard. This will make the Apps smaller but cause longer build times.</string>
+
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_no">Нет</string>
+    <string name="dialog_ok">Ок</string>
+    <string name="dialog_yes">Да</string>
+
+    <string name="cancel">Отмена</string>
+
+    <string name="scoped_storage_title">Android 11 R changes</string>
+    <string name="scoped_storage_msg">Android 11 introduce a new file-management way called \"Scoped Storage\". You need to grant a special permission!</string>
+    <string name="code_no_errors">Нет ошибок</string>
+    <string name="code_errors">\" Errors\"</string>
+    <string name="code_error_line">\" (line: \"</string>
+    <string name="not_implemented_yet">Not implemented yet!</string>
+    <string name="saved">Сохранено!</string>
+    <string name="project">Проект</string>
+    <string name="path">\"Путь: \"</string>
+    <string name="size">\"Размер: \"</string>
+    <string name="add_new_class">Новый класс</string>
+    <string name="create">Создать</string>
+    <string name="invalid_class_name">Invalid class name</string>
+    <string name="file_already_exist">File already exist</string>
+    <string name="unable_to_write">Unable to write</string>
+    <string name="abstract_modification">Abstract Modification</string>
+    <string name="more_options">More options..</string>
+    <string name="add_tag">Добавить TAG</string>
+    <string name="class_name">Имя класса…</string>
+    <string name="deleted">Удалено!</string>
+    <string name="create_folder">Новая папка</string>
+    <string name="create_new_project">Новый проект</string>
+    <string name="create_project">Создать проект</string>
+    <string name="project_name">Название:</string>
+    <string name="package_name">Имя пакета:</string>
+    <string name="no_open_files">Нет открытых файлов</string>
+
+</resources>

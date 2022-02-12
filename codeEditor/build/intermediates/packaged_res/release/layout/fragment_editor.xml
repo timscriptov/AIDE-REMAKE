@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.mcal.apkeditor.pro.view.EditorPager
+            android:id="@+id/editorPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:textCursorDrawable="@drawable/caret"
+            android:completionThreshold="2"
+            android:popupBackground="@drawable/autocomplete_bg"
+            android:background="@null"
+            android:scrollbars="none"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет открытых файлов!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:id="@+id/empty"/>
+
+        <!-- com.mcal.apkeditor.pro.widget.TextScroller
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:id="@+id/scroller"
+            app:thumbTint="?colorAccent"/ -->
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:id="@+id/keyboard_container"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/action_tab"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:background="?colorSurface"
+            android:src="@drawable/ic_keyboard_tab"
+            app:tint="?colorOnSurface"/>
+
+        <com.mcal.apkeditor.pro.view.ExtendedKeyboard
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="?colorPrimary"
+            android:id="@+id/extended_keyboard"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_keyboard_key"
+            tools:itemCount="24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

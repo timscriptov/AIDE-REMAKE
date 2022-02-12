@@ -1,0 +1,176 @@
+{
+  "category": [
+    {
+      "icon": "as.png",
+      "title": "Android Project",
+      "templates": [
+        {
+          "icon": "app.png",
+          "title": "New Android App",
+          "describes": "Empty Project",
+          "template": "template_GradleApp.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/gradleApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "appcompat.png",
+          "title": "New AppCompat App",
+          "describes": "AppCompatProject",
+          "template": "template_appcompat.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "androidx.png",
+          "title": "New AndroidX App",
+          "describes": "AndroidXProject",
+          "template": "template_androidx.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "icon": "ic_launcher_ads.png",
+      "title": "Android AdMob",
+      "templates": [
+        {
+          "icon": "ic_launcher_ads.png",
+          "title": "AppCompat AdMob",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "template": "appcompat_admob.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat_admob.zip",
+              "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "ic_launcher_ads.png",
+          "title": "AndroidX AdMob",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "template": "androidx_admob.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx_admob.zip",
+              "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "icon": "ic_launcher_firebase.png",
+      "title": "Android Firebase",
+      "templates": [
+        {
+          "icon": "ic_launcher_firebase.png",
+          "title": "AppCompat Firebase",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "template": "appcompat_firebase.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat_firebase.zip",
+               "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "ic_launcher_firebase.png",
+          "title": "AndroidX Firebase",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "template": "androidx_firebase.zip",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx_firebase.zip",
+               "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

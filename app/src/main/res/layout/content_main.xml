@@ -1,0 +1,187 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:windowBackground"
+                android:minHeight="?attr/actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="?android:windowBackground"
+                android:clipChildren="true"
+                app:tabGravity="center"
+                app:tabMode="scrollable"
+                app:tabPaddingBottom="0dp"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingTop="0dp"
+                app:tabTextAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:windowBackground"
+                android:gravity="top"
+                android:indeterminateOnly="true"
+                android:scaleY="1.5"
+                android:visibility="gone" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/drag_view"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:id="@+id/welcome_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:layout_marginEnd="20.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:src="@drawable/shape_circle"
+                            android:tint="#ffcccccc" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="70.0dip"
+                                android:layout_height="10.0dip"
+                                android:background="#ffcccccc" />
+
+                            <View
+                                android:layout_width="110.0dip"
+                                android:layout_height="10.0dip"
+                                android:layout_marginTop="10.0dip"
+                                android:background="#ffcccccc" />
+
+                            <View
+                                android:layout_width="40.0dip"
+                                android:layout_height="10.0dip"
+                                android:layout_marginTop="10.0dip"
+                                android:background="#ffcccccc" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:layout_marginEnd="20.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:src="@drawable/shape_circle"
+                            android:tint="#ffe6e6e6" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="100.0dip"
+                                android:layout_height="10.0dip"
+                                android:background="#ffe6e6e6" />
+
+                            <View
+                                android:layout_width="140.0dip"
+                                android:layout_height="10.0dip"
+                                android:layout_marginTop="10.0dip"
+                                android:background="#ffe6e6e6" />
+
+                            <View
+                                android:layout_width="40.0dip"
+                                android:layout_height="10.0dip"
+                                android:layout_marginTop="10.0dip"
+                                android:background="#ffe6e6e6" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mainNoOpenFilesView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:focusable="true"
+                    android:text="@string/no_open_files"
+                    android:textSize="17.0sp" />
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.trunksku.asmobile.view.SymbolBarLayout
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

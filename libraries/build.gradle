@@ -1,0 +1,5 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('baksmali-2.5.2.jar'))
+artifacts.add("default", file('smali-2.5.2.jar'))
+artifacts.add("default", file('dexlib2-2.5.2.jar'))
+artifacts.add("default", file('util-2.5.2.jar'))

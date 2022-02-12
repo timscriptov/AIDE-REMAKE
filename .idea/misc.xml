@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/activity_project.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/activity_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/auto_panel_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/colorpicker.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/complete_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/designer.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/designer_sizedialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/designer_viewlist_entry.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/designer_widgetlist_entry.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/designer_widgetlist_group.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/dialog_layout_preview.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/error_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/fragment_document.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/fragment_editor.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/fragment_folder_structure.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/item_auto_panel.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/item_list_key.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/item_list_suggest.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/item_tab_file.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/layout_code_editor.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/layout_file_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/layout_hints_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/list_item_file.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/list_item_suggest_default.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/list_item_symbol.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/list_item_tabs.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/main_left.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/propertydialog_entry.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/resource_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/view.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/layout/view_bean_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppProjects/AIDERemake/app/src/main/res/menu/designer_options_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/AppProjects/AIDERemake/codeEditor/src/main/res/drawable/autocomplete_bg.xml" value="0.196" />
+        <entry key="..\:/AppProjects/AIDERemake/codeEditor/src/main/res/layout/activity_editor.xml" value="0.18802083333333333" />
+        <entry key="..\:/AppProjects/AIDERemake/codeEditor/src/main/res/layout/item_keyboard_key.xml" value="0.18802083333333333" />
+        <entry key="..\:/AppProjects/AIDERemake/codeEditor/src/main/res/layout/popup_item_small.xml" value="0.18802083333333333" />
+        <entry key="..\:/AppProjects/AIDERemake/codeEditor/src/main/res/layout/toolbar.xml" value="0.18802083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txt_suggest_header"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="?colorAccent"
+        android:gravity="center"
+        android:text="v"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GetResultCode" />
+
+        <TextView
+            android:id="@+id/suggestion_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GetResultCode"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_return_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|end"
+        android:maxEms="5"
+        android:padding="2dp"
+        android:text="String"
+        android:typeface="monospace"
+        android:visibility="gone" />
+
+
+</LinearLayout>

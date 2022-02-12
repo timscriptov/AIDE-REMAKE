@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="userInterface">
+
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="darkMode"
+            android:summary="darkModeSummary"
+            android:title="darkMode" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Maven">
+        <EditTextPreference
+            android:defaultValue="https://maven.google.com\nhttps://jitpack.io"
+            android:dialogTitle="Maven Url (Enter as Delimiter)"
+            android:key="mavenRepos"
+            android:selectAllOnFocus="true"
+            android:title="Maven url repo" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Compiler">
+        <EditTextPreference
+            android:dialogTitle="@string/preference_dialog_sdk"
+            android:key="userAndroidjar"
+            android:selectAllOnFocus="true"
+            android:summary="@string/preference_summary_sdk"
+            android:title="@string/preference_title_sdk" />
+
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="useAapt2"
+            android:title="Use AAPT2" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="useJava8"
+            android:title="Use Java8" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="useProguard"
+            android:summary="@string/proguard_summary"
+
+            android:title="@string/proguard_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="useConversion"
+            android:summary="APK Conversion APK to AAB"
+            android:title="Enable APK Conversion" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ApkSigner">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="customSign"
+            android:title="Use Custom Sign" />
+    </PreferenceCategory>
+</PreferenceScreen>

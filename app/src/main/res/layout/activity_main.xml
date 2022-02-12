@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.trunksku.asmobile.view.VPDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include
+        layout="@layout/main_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginRight="-30dp" />
+
+    <FrameLayout
+        android:id="@+id/container_diagnostic_list_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginStart="-30dp"
+        android:layout_marginLeft="-30dp"
+        android:background="?android:windowBackground" />
+
+</com.trunksku.asmobile.view.VPDrawerLayout>

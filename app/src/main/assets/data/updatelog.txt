@@ -1,0 +1,19 @@
+v1.6 (2022-02-06)
+• Fixed Dependency Resolver
+
+v1.5 (2022-01-24)
+• Added Code Completation
+• Added Code Analysis (When Saving)
+• Improve Code Editor
+
+v1.2 (2022-01-10)
+• Added Ui Designer
+• Fixed Some bugs
+• Improve Code Editor
+
+v1.0 (2022-01-07)
+• Updated aapt 
+• Updated android.jar 
+• Updated Proguard 
+• Added AAB Support
+• Added Firebase Support

@@ -1,0 +1,7 @@
+include ':app'
+include ':apksigner'
+include ':codeEditor'
+include ':lexer'
+include ':libraries'
+
+rootProject.name = "ASMobile"

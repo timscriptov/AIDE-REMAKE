@@ -1,0 +1,80 @@
+package com.trunksku.asmobile.utils;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+
+import java.io.File;
+
+public class Environment {
+    private static final String APP_NAME = "JavaNIDE";
+
+    public static void install(Context context) throws Exception {
+        Assets.copyAssets(context.getAssets(), "jars", getRootDir(context));
+    }
+
+    public static File getRootDir(Context context) {
+        return context.getFilesDir();
+    }
+
+    private static File mkdirsIfNotExist(File f) {
+        if (!f.exists()) {
+            f.mkdirs();
+        }
+        return f;
+    }
+
+    public static File getSdkDir(Context context) {
+        File sdkDir = new File(getRootDir(context), "sdk");
+        return mkdirsIfNotExist(sdkDir);
+    }
+
+    public static boolean isSdkInstalled(Context context) {
+        File classpathFile = Environment.getClasspathFile(context);
+        return classpathFile.exists();
+    }
+
+    public static File getClasspathFile(Context context) {
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
+        String classpathFile = pref.getString("key_classpath", "");
+        File file = new File(classpathFile);
+        if (!file.exists() || classpathFile.equals("default")) {
+            file = new File(getSdkDir(context), "android.jar");
+        } else {
+            System.out.printf("Classpath file %s not exist%n", classpathFile);
+        }
+        return file;
+    }
+
+    public static File getBootClassPathFile(Context context) {
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
+        String bootClassPathFile = pref.getString("key_bootclasspath", "");
+        File file = new File(bootClassPathFile);
+        if (!file.exists()) {
+            file = new File(getSdkDir(context), "rt.jar");
+        } else {
+            System.out.printf("Classpath file %s not exist%n", bootClassPathFile);
+        }
+        return file;
+    }
+
+    public static File getSdCardLibraryExtractedFolder() {
+        File dir = new File(getSdkAppDir(), ".cached/bundleFolder");
+        return mkdirsIfNotExist(dir);
+    }
+
+    public static File getSdCardLibraryBundleFolder() {
+        File dir = new File(getSdkAppDir(), ".cached/bundle");
+        return mkdirsIfNotExist(dir);
+    }
+
+    public static File getSdkAppDir() {
+        File dir = new File(android.os.Environment.getExternalStorageDirectory(), APP_NAME);
+        return mkdirsIfNotExist(dir);
+    }
+
+    public static File getLocalRepositoryDir(Context context) {
+        File dir = new File(getSdkDir(context), ".repo");
+        return mkdirsIfNotExist(dir);
+    }
+}

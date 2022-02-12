@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/methods"
+        android:title="@string/editor_title_smali_methods"
+        android:icon="@drawable/round_explore_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/permission_editor"
+        android:title="Permission Editor"
+        android:icon="@drawable/round_image_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ui_designer"
+        android:title="@string/editor_title_app_ui_designer"
+        android:icon="@drawable/round_image_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/save"
+        android:title="@string/editor_save"
+        android:icon="@drawable/round_save_24" />
+    <item
+        android:id="@+id/undo"
+        android:title="@string/editor_undo"
+        android:icon="@drawable/round_undo_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/redo"
+        android:icon="@drawable/round_redo_24"
+        android:title="@string/editor_redo"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/find"
+        android:title="@string/editor_find"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/go_to_line"
+        android:title="@string/editor_go_to_line"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/edit_mode"
+        android:title="@string/editor_edit_mode" />
+    <item
+        android:id="@+id/translate"
+        android:title="@string/editor_smali_to_java"/>
+    <item
+        android:id="@+id/format"
+        android:title="@string/editor_format" />
+
+</menu>
